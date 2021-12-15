@@ -1,0 +1,167 @@
+/*fondo de pantalla*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url("https://image.freepik.com/vector-gratis/fondo-abstracto-formas-blancas_79603-1362.jpg");
+    height: 100vh;
+}
+/* Estilos a los textos*/
+h1{
+    font-family:'Euphoria Script', cursive; 
+}
+.border{
+    border: solid rgb(173, 165, 165)
+
+}
+
+h3{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+div h2{
+    color:rgba(82, 139, 29, 0.699);
+    font-weight: bold ;
+    
+}
+
+p{ font-family:monospace;
+    font-size: 20px;
+
+}
+/* menu otros index con flexbox*/
+.menuFlex{
+    display: flex;
+    flex-direction:row; 
+
+    justify-content: space-between;
+    list-style-type: none;
+}
+.imagenesTrabajo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*menu detalles*/
+
+nav li{
+    display: inline;
+    width: 200px;
+    position:relative;
+    font-size: 20px;
+    
+    
+
+    height: 50px;
+    text-align:center;
+    padding: 25px 25px;
+    
+}
+/*index principal con grid*/
+.grid-areas{
+    display: grid;
+    grid-template-areas: 
+    "none encabezado encabezado encabezado"
+    "menu menu menu menu"
+    "foto foto mapa mapa"
+    "pie pie pie pie";
+    /*tamaño areas*/
+    grid-template-columns: auto ;
+    grid-template-rows: auto;
+
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+/* Nombre de areas*/
+header{
+    grid-area: encabezado;
+}
+nav{
+    grid-area: menu;
+
+}
+main{
+    grid-area: foto;
+}
+iframe{
+    grid-area: mapa;
+}
+
+footer{
+    grid-area: pie;
+}
+
+
+/*MARGENES*/
+.margenes{
+    margin: 20px 20px;
+}
+.margenMapa{
+margin: 20px;
+}
+/*Colores tipogragia*/
+h1{
+    color: rgba(7, 161, 102, 0.781);
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+h2{
+    font-size: 40px;
+}
+
+a:link {
+    color:#fb8500;
+    text-decoration: none;
+}
+a:visited{
+    color:#0c181b;
+    text-decoration: none;
+}
+/*cuando nos ponemos encima del link*/
+a:hover{
+    color:#3fddd0;
+    text-decoration: underline;
+}
+a:active {
+    color: #023047;
+    text-decoration: underline;
+}
+
+/*caja para formulario*/
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 40%;
+    background-color: rgb(187, 228, 209);
+    border-radius: 10px;
+}
+
+/*caja para index trabajo*/
+.cajaTrabajo{
+    padding: 5px;
+    margin: 15px;
+    width: 50%;
+    background-color:rgb(184, 245, 192);
+    border-radius: 5px;
+}
+
+/*caja contacto*/
+.cajaContacto{
+    padding: 15px;
+    margin: 15px;
+    width:70%;
+    background-color: white;
+}
+
+/*media queries*/
+/*tablet*/
+@media (min-width: 600px) and (min-width: 1023px){ body{ font-size: 1rem;}
+
+}
+/*smartphone*/
+@media(min-width:480px){ body{ font-size: 0.75rem;}
+
+}
+/* desktop*/
+@media (min-width:1024px){
+    body{ font-size: 1.25rem;}
+}
+    
